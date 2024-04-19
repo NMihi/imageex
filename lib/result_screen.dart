@@ -90,7 +90,7 @@ class _ResultScreenState extends State<ResultScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => QrScreen1(data: extractedData),
+                    builder: (context) => QrScreen(data: extractedData),
                   ),
                 );
               },

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:qr_image/qr_image.dart';
 
-class QrScreen extends StatelessWidget {
+class QrScreen1 extends StatelessWidget {
   final Map<String, String> data;
 
-  const QrScreen({Key? key, required this.data}) : super(key: key);
+  const QrScreen1({Key? key, required this.data}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,11 +21,11 @@ class QrScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Wrap QrImage in a list
-            [QrImage(
+            QrImageView(
               data: qrData,
               version: QrVersions.auto,
               size: 200.0,
-            )],
+            ),
             const SizedBox(height: 20.0),
             Text(
               'Scan this QR Code',

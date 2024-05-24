@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:imageex/qr_flutter.dart';
 
+
 // class ResultScreen extends StatelessWidget{
 //   final String text;
 

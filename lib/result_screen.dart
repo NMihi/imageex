@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:imageex/qr_flutter.dart';
 
 
+
 // class ResultScreen extends StatelessWidget{
 //   final String text;
 
@@ -18,7 +19,7 @@ import 'package:imageex/qr_flutter.dart';
 //       ),
 //     );
 // }
-
+//////////////////////////////
 class ResultScreen extends StatefulWidget {
   final String text;
 
@@ -40,7 +41,7 @@ class _ResultScreenState extends State<ResultScreen> {
 
   Map<String, String> _extractData(String text) {
     // Implement your entity extraction logic here based on OCR text
-    // This is a dummy implementation for illustration
+    //  dummy implementation for illustration
     return {
       'Document Type': 'Driving Lisence',
       'Document Country': 'SriLanka',
@@ -140,21 +141,21 @@ class EditScreen extends StatelessWidget {
   }
 }
 
-class QrScreen extends StatelessWidget {
-  final Map<String, String> data;
+// class QrScreen extends StatelessWidget {
+//   final Map<String, String> data;
 
-  const QrScreen({Key? key, required this.data}) : super(key: key);
+//   const QrScreen({Key? key, required this.data}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    // Generate QR code using data and display it
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('QR Code'),
-      ),
-      body: Center(
-        child: Text('Implement QR Code Generation Here'),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     // Generate QR code using data and display it
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('QR Code'),
+//       ),
+//       body: Center(
+//         child: Text('Implement QR Code Generation Here'),
+//       ),
+//     );
+//   }
+// }
